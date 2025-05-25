@@ -4,7 +4,7 @@ Student Roll Number: 23K8005
 Student Name: Faizan-E-Ali Qazi
 Instructor Name: Dr. M Nouman Durrani
 
-Data used is 'User relationship data' which is part of Pokec social netowrk datasets from https://snap.stanford.edu/data/soc-Pokec.html
+Data used is 'User relationship data' which is part of Pokec social network datasets from https://snap.stanford.edu/data/soc-Pokec.html
 
 Dataset statistics
 Nodes: 1632803
