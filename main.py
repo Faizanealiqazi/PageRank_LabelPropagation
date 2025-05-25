@@ -68,14 +68,14 @@ if __name__ == "__main__":
     spark = create_spark_session()
     df = explore_data(spark, DATA_PATH)
 
-    # print("Running PageRank...")
-    # pagerank_result = run_pagerank(df)
-    # pagerank_result.show(5)
-    #
-    # # Save PageRank result to a single CSV file
-    # pagerank_result.coalesce(1).write.mode("overwrite").option("header", "true").csv("output/pagerank_result")
-    # rename_single_csv("output/pagerank_result", "pagerank_result")
-    #
+    print("Running PageRank...")
+    pagerank_result = run_pagerank(df)
+    pagerank_result.show(5)
+
+    # Save PageRank result to a single CSV file
+    pagerank_result.coalesce(1).write.mode("overwrite").option("header", "true").csv("output/pagerank_result")
+    rename_single_csv("output/pagerank_result", "pagerank_result")
+
     print("Running Label Propagation...")
     labelprop_result = run_label_propagation(df)
     labelprop_result.show(5)
